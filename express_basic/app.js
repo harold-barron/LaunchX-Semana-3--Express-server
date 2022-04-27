@@ -8,7 +8,7 @@ const app = express()
 const port = 3000
 
 //Pat inicial, responderá a la url localhost:3000
-app.get('/',(req,req) =>
+app.get('/',(req,res) =>
 {
     res.send('Hello World')
 })
