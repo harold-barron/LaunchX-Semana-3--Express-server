@@ -35,3 +35,11 @@ app.get('/explorersInNode',(req,res) =>
 
     res.send(explorers)
 })
+
+//Query params
+//localhost:3000/explorers/Harold
+
+app.get('/explorers/:explorerName',(req,res)=>
+{
+    res.send(req.params)
+})
